@@ -29,7 +29,7 @@ import { useForm } from '@inertiajs/inertia-vue3'
                 <span>qty:</span>
                 <input type="number" class="border border-gray-200 rounded focus:outline-none w-20" >
             </div>
-            <p>{{product.price}}</p>
+            <p>{{product.price.formatted}}</p>
         </div>
         <div class="px-4 pb-2 mt-4">
             <Button class="w-full items-center flex justify-center">Add to cart</Button>

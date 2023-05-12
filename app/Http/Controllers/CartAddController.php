@@ -17,8 +17,7 @@ class CartAddController extends Controller
         // /* It's dumping the request object. */
         // dd($request);
         //session key, tähistab array'd ehk cart = [products]
-        $session_key = 'cart.product-' . $request->product['id'];
-
+        $session_key = 'cart.product' . $request->product['id'];
         //dd(session()->get('cart'));
         /* Adding a product to the cart. */
         if (session()->has($session_key)) {

@@ -16,6 +16,8 @@ class ProductFactory extends Factory
      */
     public function definition()
     {
+       $productPrefixes = ['Apple', 'Banana', 'Pear', 'Cherry', 'Plum', 'Ananas'];
+       $name = fake()->name() . ' ' . $productPrefixes[fake()->numberBetween(0, 5)]; 
         return [
             'name' => fake()->name(),
             'description' => fake()->paragraph(1),

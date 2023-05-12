@@ -16,9 +16,11 @@ class CategoryFactory extends Factory
      */
     public function definition()
     {
+        /*$name = fake()->name() . ' ' . $productPrefixes[fake()->numberBetween(0, 5)]; 
+        */
         return [
-            
             'name' => fake()->name(),
+            'description' => fake()->paragraph(1),
         ];
     }
 }

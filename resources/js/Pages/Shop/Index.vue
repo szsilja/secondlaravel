@@ -7,14 +7,15 @@ const props = defineProps({
         default: null,
         }
 })
-console.log(props.products)
+ 
 </script>
 <template>
 <Layout>
         <div class="mt-16 max-w-screen-lg mx-auto px-6">
             <h1 class="tracking-wider text-xl">E-pood</h1>
             <div class="grid grid-cols-3 gap-4 mt-12">
-                <ProductCard v-for="product in products.data" :key="product" :product="product"/>
+                <ProductCard v-for="product in products.data" 
+                :key="product" :product="product"/>
             </div>
         </div>
     </Layout>

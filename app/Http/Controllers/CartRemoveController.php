@@ -22,7 +22,7 @@ class CartRemoveController extends Controller
      * @return The Shop/Cart view with the products paginated.
      */
         // removes the item from the cart
-        session()->forget('cart.product-' . $request->product['id']);
+        session()->forget('cart.product' . $request->product['id']);
         return redirect()->back();
     }
 }
